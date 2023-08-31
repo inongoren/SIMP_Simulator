@@ -31,7 +31,9 @@ creation of three arrays that will be used in the simulator:
   1.	int array called “R” that will hold the data of the registers, initialized with zeros.
   2.	Int array called “mem” which is dynamically allocated and holds the memory of the processor for all the simulation and prints its content at the end in the memout file.
   3.	Inst Instructions array: an array which holds all the instructions from the memin file.
+
 Than, the files are opened and checked to be opened correctly.
+
 In case the files are opened correctly, the simulator starts with the execution of the instructions.
 At the end, the desired data is printed to the output files, the files are closed and the memory which was dynamiccaly allocated is free.
 The last part of the code is helping function used in the code.  
