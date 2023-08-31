@@ -17,11 +17,16 @@ The output of the simulator is four files:
 The simulator ends when it gets an HALT instruction.
 
 **The structure of the code:**
+
 •	Structs defining: defining two structs that will be used in the simulator:
+
   1.	**Inst**: contains five fields: opcode, rd, rs, rt, immediate. The fields are updated while the simulator runs according the the current instruction.
   2.	**Files**: holds the five files the simulator works with: memin, memout, regout, trace, cycles.
+
 •	Decleration for the function we are using in the code
+
 •	main function:
+
 creation of three arrays that will be used in the simulator:
   1.	int array called “R” that will hold the data of the registers, initialized with zeros.
   2.	Int array called “mem” which is dynamically allocated and holds the memory of the processor for all the simulation and prints its content at the end in the memout file.
